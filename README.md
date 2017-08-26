@@ -36,6 +36,19 @@ After the client library is installed/deployed, you can use it in your Maven pro
 
 ## Exemplo
 
+###### Dependências
+
+```
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile "com.squareup.retrofit2:retrofit:2.3.0"
+    compile("com.squareup.retrofit2:converter-gson:2.3.0") {
+        exclude module: 'com.google.code.gson'
+    }
+    compile "com.squareup.retrofit2:converter-scalars:2.3.0"
+    compile "com.squareup.okhttp3:logging-interceptor:3.6.0"
+    compile group: 'joda-time', name: 'joda-time', version: '2.9.9'
+```
+
 ###### Click do Botão
 ```
 btSaldo.setOnClickListener(new View.OnClickListener() {
