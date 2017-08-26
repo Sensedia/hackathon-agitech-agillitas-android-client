@@ -50,8 +50,8 @@ btSaldo.setOnClickListener(new View.OnClickListener() {
     public Response<Saldo> saldoCartao() throws IOException {
         ApiClient api = new ApiClient();
         CartoesApi apiInstance = api.createService(CartoesApi.class);
-        String clientId = "29e4e2c7-8d83-377a-a7c0-9ae2a579457f"; // String | Identificador do cliente utilizado na autenticação.
-        String accessToken = "42ac9359-0479-3458-bee9-d95de4d6f857"; // String | Token de acesso utilizado na autenticação.
+        String clientId = "client_id"; // String | Identificador do cliente utilizado na autenticação.
+        String accessToken = "access_token"; // String | Token de acesso utilizado na autenticação.
         String idCartao = "idCartao_example"; // String | Número identificador referente ao proxy localizado no verso do cartão.
         Call<Saldo> request = apiInstance.cartoesIdCartaoSaldoGet(clientId, accessToken, idCartao);
         Response<Saldo> response = request.execute();
