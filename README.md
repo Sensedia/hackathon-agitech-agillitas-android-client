@@ -24,8 +24,8 @@ After the client library is installed/deployed, you can use it in your Maven pro
 
 ```xml
 <dependency>
-    <groupId>io.swagger</groupId>
-    <artifactId>swagger-java-client</artifactId>
+    <groupId>com.sensedia</groupId>
+    <artifactId>agillitas-android-client</artifactId>
     <version>1.0.0</version>
     <scope>compile</scope>
 </dependency>
