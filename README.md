@@ -53,7 +53,7 @@ btSaldo.setOnClickListener(new View.OnClickListener() {
         String clientId = "client_id"; // String | Identificador do cliente utilizado na autenticação.
         String accessToken = "access_token"; // String | Token de acesso utilizado na autenticação.
         String idCartao = "idCartao_example"; // String | Número identificador referente ao proxy localizado no verso do cartão.
-        Call<Saldo> request = apiInstance.cartoesIdCartaoSaldoGet(clientId, accessToken, idCartao);
+        Call<Saldo> request = apiInstance.getSaldo(clientId, accessToken, idCartao);
         Response<Saldo> response = request.execute();
         return response;
     }
